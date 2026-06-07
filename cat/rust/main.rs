@@ -41,8 +41,11 @@ fn main() {
     // and read the whole file content to it
     file.read_to_string(&mut file_buffer).unwrap();
     println!("Reading out './{}'\n\n===\n", input_file);
-*/
 
     // then print out
+    println!("{}", file_buffer);
+*/
+
+    // or read byte by byte instead
     file_read(&mut file);
 }
