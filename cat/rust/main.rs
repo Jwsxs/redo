@@ -3,6 +3,8 @@ use std::env;
 
 // doesn't have to return anything
 fn file_read(file: &mut File) {
+    // use to compare with EOF, only
+    // it stores the current byte value (so an u8), and compares with 0 = EOF
     let mut buf = [0u8; 1];
 
     // same idea as EOF on c= fgetc(FILE *file) being -1,
